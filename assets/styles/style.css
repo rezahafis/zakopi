@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+ 
+header.navbar-container {
+  max-width: 1400px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+  background-color: #9E7676;
+  position: sticky;
+  top: 0;
+}
+ 
+header.navbar-container .logo a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+ 
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+ 
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+ 
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #FFF8EA;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+ 
+header.navbar-container .nav-list li:hover a {
+  background-color: white;
+  color: #594545;
+}
+.profile img {
+    width: 200px;  
+  }
+.card {
+    box-shadow: 0 4px 8px 0 #594545;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+main {
+    padding: 20px;
+    /* overflow: auto; */
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  #content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  main #beranda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  #beranda .content-description {
+    padding-left: 50px;
+    font-size: 28px;
+  }
+
+  #beranda .content-image img {
+    width: 450px;
+    padding-left: 100px;
+  }
+
+  main #content #tentangKita h1{
+    font-size: 28px;
+  }
+
+  main #content #tentangKita p{
+    font-size: 16px;
+  }
+
+  main #content #minuman h2{
+    text-align: center;
+  }
+  
+  main #content #minuman .row-minum {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  main #content #minuman .row-minum .menuMinum{
+    background-color: #FFF8EA;
+    border-radius: 15px;
+  }
+
+  main #content #minuman .row-minum .menuMinum img{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    border-radius: 10px;
+    width: 250px;
+
+  }
+
+  main #content #minuman .row-minum .menuMinum h3{
+    text-align: center;
+  }
+
+  main #content #minuman .row-minum .menuMinum h4{
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  main #content #minuman .row-minum .menuMinum p{
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  main #content #nonCoffe h2{
+    text-align: center;
+  }
+  
+  main #content #nonCoffe .row-minum {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  main #content #nonCoffe .row-minum .menuMinum{
+    background-color: #FFF8EA;
+    border-radius: 15px;
+  }
+
+  main #content #nonCoffe .row-minum .menuMinum img{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    border-radius: 10px;
+    width: 250px;
+
+  }
+
+  main #content #nonCoffe .row-minum .menuMinum h3{
+    text-align: center;
+  }
+
+  main #content #nonCoffe .row-minum .menuMinum h4{
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  main #content #nonCoffe .row-minum .menuMinum p{
+    text-align: left;
+    padding-left: 25px;
+  }
+
+
+  aside {
+    flex: 1;
+  }
+
+  
+  header {
+    display: inline;
+  }
+
+  
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+
+    .profile img {
+        max-width: 100%;
+        max-height: 100%; 
+      }
+   
+    main aside {
+      align-self: center;
+    }
+
+    #beranda .content-description {
+      padding-left: 10px;
+      font-size: 28px;
+    }
+  
+    #beranda .content-image img {
+      width: 400px;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+
+    .profile img {
+        max-width: 100%;
+        max-height: 100%; 
+      }
+
+    main aside {
+      align-self: stretch;
+    }
+
+    #beranda .content-description {
+      padding-left: 10px;
+      font-size: 28px;
+    }
+  
+    #beranda .content-image img {
+      width: 400px;
+    }
+  }
+
+
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #594545;
+    text-align: center;
+    font-weight: bold;
+  }
